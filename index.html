@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container quoteArea">
+        <div>
+        <div class="ribbon ribbon-top-left">
+            <span id="category">category</span>
+        </div>
+        <h2>Quote of the day</h2>
+        <div class="quote"></div>
+        
+        <div class="buttons">
+            <div class="icon">
+                <i class="fa-regular fa-heart" id="like" onclick="likequote()"></i>
+                <i class="fa-solid fa-list" id="list"></i>
+                <i class="fa-regular fa-copy" id="copy" onclick="copyquote()"></i>
+                <i class="fa-brands fa-twitter" onclick="twiteer()" id="share"></i>
+
+            </div>
+            <button class="btn" id="generate" onclick="generateapi()">New Quotes</button>
+        </div>
+        </div>
+    </div>
+    <div class="container favouriteList">
+        <h2>Favourite Quote List</h2>
+        <li class="fa-solid fa-arrow-left-long" onclick="switchquote()"></li>
+        <ul id="favouriteData"></ul>
+        <li class="fa-solid fa-broom" onclick="clearFavouriteList()"></li>
+    </div>
+
+</body>
+<script src="https://kit.fontawesome.com/98f3b70fd6.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</html>
